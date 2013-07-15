@@ -17,6 +17,12 @@
 		2702143A17906A13002EF074 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702143917906A13002EF074 /* Default@2x.png */; };
 		2702143C17906A13002EF074 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702143B17906A13002EF074 /* Default-568h@2x.png */; };
 		2702143F17906A13002EF074 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2702143D17906A13002EF074 /* MainStoryboard.storyboard */; };
+		277031A417948D2000CE2C12 /* FCE.png in Resources */ = {isa = PBXBuildFile; fileRef = 277031A317948D2000CE2C12 /* FCE.png */; };
+		277031A617948DDA00CE2C12 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 277031A517948DDA00CE2C12 /* cloud.png */; };
+		277031A817948DF100CE2C12 /* camp.png in Resources */ = {isa = PBXBuildFile; fileRef = 277031A717948DF100CE2C12 /* camp.png */; };
+		277031AB17948FC500CE2C12 /* libmTiks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 277031A917948FC500CE2C12 /* libmTiks.a */; };
+		277031AE1794900D00CE2C12 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277031AD1794900D00CE2C12 /* SystemConfiguration.framework */; };
+		277031B01794901900CE2C12 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 277031AF1794901900CE2C12 /* libsqlite3.dylib */; };
 		2794E1D717942C1200A25753 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794E1C917942C1200A25753 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2794E1D817942C1200A25753 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794E1CB17942C1200A25753 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2794E1D917942C1200A25753 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794E1CD17942C1200A25753 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -44,6 +50,13 @@
 		2702143917906A13002EF074 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2702143B17906A13002EF074 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2702143E17906A13002EF074 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		277031A317948D2000CE2C12 /* FCE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FCE.png; path = ../../../Assets/FCE.png; sourceTree = "<group>"; };
+		277031A517948DDA00CE2C12 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		277031A717948DF100CE2C12 /* camp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp.png; sourceTree = "<group>"; };
+		277031A917948FC500CE2C12 /* libmTiks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmTiks.a; sourceTree = "<group>"; };
+		277031AA17948FC500CE2C12 /* mtiks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtiks.h; sourceTree = "<group>"; };
+		277031AD1794900D00CE2C12 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		277031AF1794901900CE2C12 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2794E1C817942C1200A25753 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		2794E1C917942C1200A25753 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		2794E1CA17942C1200A25753 /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedInfo.h; sourceTree = "<group>"; };
@@ -72,9 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277031B01794901900CE2C12 /* libsqlite3.dylib in Frameworks */,
+				277031AE1794900D00CE2C12 /* SystemConfiguration.framework in Frameworks */,
 				2702142617906A13002EF074 /* UIKit.framework in Frameworks */,
 				2702142817906A13002EF074 /* Foundation.framework in Frameworks */,
 				2702142A17906A13002EF074 /* CoreGraphics.framework in Frameworks */,
+				277031AB17948FC500CE2C12 /* libmTiks.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,8 @@
 		2702141917906A13002EF074 = {
 			isa = PBXGroup;
 			children = (
+				277031AF1794901900CE2C12 /* libsqlite3.dylib */,
+				277031AD1794900D00CE2C12 /* SystemConfiguration.framework */,
 				2702142B17906A13002EF074 /* Full Circle Earth */,
 				2702142417906A13002EF074 /* Frameworks */,
 				2702142317906A13002EF074 /* Products */,
@@ -111,6 +129,7 @@
 		2702142B17906A13002EF074 /* Full Circle Earth */ = {
 			isa = PBXGroup;
 			children = (
+				277031AC17948FC900CE2C12 /* mtiks */,
 				2794E1E517942E4600A25753 /* Blog */,
 				2794E1DE17942C1800A25753 /* Parser */,
 				2702143417906A13002EF074 /* AppDelegate.h */,
@@ -125,6 +144,9 @@
 		2702142C17906A13002EF074 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				277031A717948DF100CE2C12 /* camp.png */,
+				277031A517948DDA00CE2C12 /* cloud.png */,
+				277031A317948D2000CE2C12 /* FCE.png */,
 				2702142D17906A13002EF074 /* Full Circle Earth-Info.plist */,
 				2702142E17906A13002EF074 /* InfoPlist.strings */,
 				2702143117906A13002EF074 /* main.m */,
@@ -134,6 +156,15 @@
 				2702143B17906A13002EF074 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		277031AC17948FC900CE2C12 /* mtiks */ = {
+			isa = PBXGroup;
+			children = (
+				277031A917948FC500CE2C12 /* libmTiks.a */,
+				277031AA17948FC500CE2C12 /* mtiks.h */,
+			);
+			name = mtiks;
 			sourceTree = "<group>";
 		};
 		2794E1DE17942C1800A25753 /* Parser */ = {
@@ -234,6 +265,9 @@
 				2702143A17906A13002EF074 /* Default@2x.png in Resources */,
 				2702143C17906A13002EF074 /* Default-568h@2x.png in Resources */,
 				2702143F17906A13002EF074 /* MainStoryboard.storyboard in Resources */,
+				277031A417948D2000CE2C12 /* FCE.png in Resources */,
+				277031A617948DDA00CE2C12 /* cloud.png in Resources */,
+				277031A817948DF100CE2C12 /* camp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +377,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Full Circle Earth/Full Circle Earth-Prefix.pch";
 				INFOPLIST_FILE = "Full Circle Earth/Full Circle Earth-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Full Circle Earth\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -354,6 +392,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Full Circle Earth/Full Circle Earth-Prefix.pch";
 				INFOPLIST_FILE = "Full Circle Earth/Full Circle Earth-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Full Circle Earth\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

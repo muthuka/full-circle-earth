@@ -28,8 +28,9 @@
     [super viewDidLoad];
 	
     if (self.passedItem) {
-        NSString *adjustedContent = [NSString stringWithFormat:@"<html><head><title>iThottam</title><link rel='stylesheet' id='style-css'  href='http://ithottam.com/wp-content/themes/tdsimple/style.css?ver=3.5.1' type='text/css' media='all' /><meta name = 'viewport' content = 'width = device-width;initial-scale = 1.0'></head><body><div>%@</div></body></html>", self.passedItem.content];
-        [self.wv loadHTMLString:adjustedContent baseURL:[NSURL URLWithString:@"http://ithottam.com"]];
+//        NSLog(@"Showing content: %@", self.passedItem.content);
+        NSString *adjustedContent = [NSString stringWithFormat:@"<html><head><title>iThottam</title><meta name = 'viewport' content = 'width = device-width;initial-scale = 1.0'></head><body><div>%@</div></body></html>", self.passedItem.content];
+        [self.wv loadHTMLString:adjustedContent baseURL:[NSURL URLWithString:@"http://fullcircleearth.org"]];
     }
 }
 
