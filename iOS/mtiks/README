@@ -1,0 +1,30 @@
+mtiks
+-----
+
+These instructions are assuming that you are using XCode to build your project. Please following the instructions below for an easy integration into your existing development project.
+
+1. Create a new application in the portal and get a new code for the new app
+2. Download our library from the portal
+  a. Required Frameworks: SystemConfiguration.framework, libsqlite3.0.dylib, CFNetwork.framework
+3. Unzip and copy your files into your project
+4. Declare the header in your delegate file as #import "mtiks.h"
+5. At the beginning of applicationDidFinishLaunching, add the following line
+   	[[mtiks sharedSession] start:@"YOUR_APP_KEY"];
+	Please put the key from the portal
+6. At the end of applicationWillTerminate, add the following line
+   	[[mtiks sharedSession] stop];
+
+7. To log any custom events or event with attributes, use the following:
+	[[mtiks sharedSession] postEvent:@"Test"];
+	[[mtiks sharedSession] postEvent:@"Test" withAttributes:[NSDictionary dictionaryWithObjectsAndKeys:@"Value1", @"Name1", @"Value2", @"Name2",nil]];
+
+For iOS 4.0 and above ONLY
+
+8. At the beginning of applicationWillResignActive, add the following line
+	[[mtiks sharedSession] stop];
+9. At the beginning of applicationWillEnterForeground, add the following line
+	[[mtiks sharedSession] start:@"YOUR_APP_KEY"];
+
+That's it. You are done integrating it. Please contact us if you need further help.
+
+Current Anti-Piracy Version: 2.0.1
