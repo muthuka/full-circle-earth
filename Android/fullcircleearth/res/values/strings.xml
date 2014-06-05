@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Full Circle Earth</string>
+    <string name="title_section1">Blog</string>
+    <string name="title_section2">Services</string>
+    <string name="title_section3">About</string>
+    <string name="empty"></string>
+    <string name="abouttext">Full Circle Earth (FCE) was incorporated on September 2012 as a non-profit corporation in the Commonwealth of Massachusetts. FCE was formed from the belief that we all have something to share in teaching and learning ways that we can live harmoniously with each other on this earth. The founding members are Jimi Carnazza, Estelle Rand and Jeff Buderer.  They share a deep commitment to sustainable living and promote this vision with the larger communities of which they are a part.</string>
+    <string name="MTIKS_KEY">1b2d7fee3c8b5904da15f222f</string>
+
+</resources>
