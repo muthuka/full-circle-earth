@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32F868E3-22B7-4AFA-9AA0-A7B77F5137BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Full Circle Earth</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57B17429-017C-46E1-8DE5-C9F1E739A6D2</key>
+		<string>https://bitbucket.org/muthuka/full-circle-earth.git</string>
+		<key>EBF85D78-6C4C-4AD4-9CAA-8B5341DFFC45</key>
+		<string>https://github.com/ZaBlanc/RaptureXML.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/FCE/Full Circle Earth.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57B17429-017C-46E1-8DE5-C9F1E739A6D2</key>
+		<string>../../../..</string>
+		<key>EBF85D78-6C4C-4AD4-9CAA-8B5341DFFC45</key>
+		<string>../../../../../mktouchapps/iosapps/Common/RaptureXML</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/muthuka/full-circle-earth.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>57B17429-017C-46E1-8DE5-C9F1E739A6D2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57B17429-017C-46E1-8DE5-C9F1E739A6D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>full-circle-earth</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EBF85D78-6C4C-4AD4-9CAA-8B5341DFFC45</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RaptureXML</string>
+		</dict>
+	</array>
+</dict>
+</plist>

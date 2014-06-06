@@ -7,18 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface mtiks : NSObject {
-	@private
-	NSString *_sessionUUID;        // Unique identifier for this session.
-	NSString *_iTunesURL;
-	NSString *_appKey;
-}
+@interface mtiks : NSObject
 
 + (mtiks *)sharedSession;
 - (NSString *)getVersion;
 
 // Basic start & stop of tracking
 - (void)start:(NSString *)strAppKey;
+- (void)startWithAntipiracy:(NSString *)strAppKey;
 - (void)stop;
 
 // Event & Attributes
