@@ -7,53 +7,52 @@
 //
 
 #import "AppDelegate.h"
-#import "mtiks.h"
-#import "UAInbox.h"
-#import "UAInboxUI.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
-    // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
-    // or set runtime properties here.
-    UAConfig *config = [UAConfig defaultConfig];
+    [Parse setApplicationId:@"5ffciQsRq6JPhn9UDX1kT7U3HsE8fNWq5qKOjglZ"
+                  clientKey:@"tDlZCtOqyAgSha2mvENFLkuO3HGQ6YR8AhfoHAdj"];
     
-    [UAPush shared].notificationTypes = (UIRemoteNotificationTypeBadge |
-                                         UIRemoteNotificationTypeSound |
-                                         UIRemoteNotificationTypeAlert );
-    
-    // Call takeOff (which creates the UAirship singleton)
-    [UAirship takeOff:config];
-    
-    //Init the UI
-    [UAInbox useCustomUI:[UAInboxUI class]];//sample UI implementation
-    [UAInbox shared].pushHandler.delegate = [UAInboxUI shared];
+    // Register for Push Notitications
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
     
     return YES;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [[mtiks sharedSession] stop];
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [[mtiks sharedSession] start:@"2da96a64638fae41febea387f"];
-    [[UAPush shared] resetBadge];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [[mtiks sharedSession] stop];
+
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [UAInboxPushHandler handleNotification:userInfo];
+    [PFPush handlePush:userInfo];
 }
 
 @end

@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UAirship.h"
-#import "UAConfig.h"
-#import "UAPush.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

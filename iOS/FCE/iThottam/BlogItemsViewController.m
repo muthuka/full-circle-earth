@@ -9,7 +9,6 @@
 #import "BlogItemsViewController.h"
 #import "MWFeedParser.h"
 #import "DetailViewController.h"
-#import "UAInboxUI.h"
 
 @interface BlogItemsViewController () <MWFeedParserDelegate>
 
@@ -39,10 +38,6 @@
         self.navigationController.toolbar.translucent = NO;
     }
     
-    // If the application gets an UAInbox message id on launch open it up immediately.
-    // Only works for the default inbox
-    [UAInboxUI shared].inboxParentController = self;
-
     list = [[NSMutableArray alloc] initWithCapacity:0];
     
     // Get all feed items

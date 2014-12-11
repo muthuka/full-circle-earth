@@ -7,7 +7,6 @@
 //
 
 #import "AboutVC.h"
-#import "UAInbox.h"
 
 @interface AboutVC ()
 
@@ -41,10 +40,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)inboxClicked:(id)sender {
-    [UAInbox displayInboxInViewController:self animated:YES];
 }
 
 @end
